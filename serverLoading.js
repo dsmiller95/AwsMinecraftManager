@@ -15,7 +15,7 @@ async function AttemptBootServer(){
         if(responseMessage.previousState == "running"){
             message = "server is already running, nothing changed. give the server a few minutes to become visible in minecraft server browser. If the server has not been visible after 5 minutes, please alert the system administrator";
         }
-        if(previousState == "pending"){
+        if(responseMessage.previousState == "pending"){
             message = "server is starting up, be patient";
         }
         message = "server booting. wait a few minutes and the server should be accessible";
