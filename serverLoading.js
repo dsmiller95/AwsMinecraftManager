@@ -10,11 +10,11 @@ async function AttemptBootServer(){
 			//mode: 'no-cors', // no-cors, *cors, same-origin
 		}).then((r)=>r.json());
 		
-		if(responseMessage.previousState == "running")
+		if(responseMessage.currentState === "running")
 			message = "Server is already running, nothing changed. give the server a few minutes to become visible in minecraft server browser. If the server has not been visible after 5 minutes, please alert the system administrator";
-		if(responseMessage.previousState == "pending")
+		else if(responseMessage.currentState === "pending")
 			message = "Server is starting up, be patient";
-		message = "Server booting. wait a few minutes and the server should be accessible";
+		else message = "Server booting. wait a few minutes and the server should be accessible";
 	}catch(e){
 		message = "Error: " + JSON.stringify(e);
 	}
