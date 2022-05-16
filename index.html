@@ -7,7 +7,7 @@
     <div>
 		<h1>Modpack details</h1>
 		<p>the current modpack is playable with vanilla minecraft, version 1.18.2. the modpack will provide you with a minimap and a visual interface to claim chunks with instead of only a command based interface</p>
-        <p>the modpack is this zip file (don't worry it doesn't have any .exes in it) to set it up in the curseforge launcher:</p>
+        <p>the modpack is this zip file (don't worry it doesn't have any .exes in it) to set it up in the <a href="https://download.curseforge.com/">curseforge launcher:</a></p>
         <ul>
             <li>click Create custom profile</li>
             <li>in that modal select the "Import a previously created profile option"</li>
@@ -15,13 +15,31 @@
         </ul>
         <a href="https://github.com/dsmiller95/AwsMinecraftManager/raw/main/Modpack/simple chunk protector-1.zip">Download modpack files. last changed 05/09/2022</a>
     </div>
+	<div>
+		<h1>Vanilla Chunk claiming guide</h1>
+		<p>All chunk claiming and unclaiming in vanilla is done with the <code>/ftbchunks</code> command
+		<ul>
+            <li>TIP: F3 + G will show chunk borders</li>
+            <li>You can claim up to 4 chunks</li>
+            <li><code>/ftbchunks info</code> : check if chunk is claimed already</li>
+            <li><code>/ftbchunks claim</code> : claims the chunk you are in</li>
+            <li><code>/ftbchunks unclaim</code> : unclaims the chunk you are in</li>
+            <li><code>/ftbchunks unclaim_all</code> : unclaims all your claimed chunks</li>
+		</ul>
+		
+		<h2>Allying</h2>
+		<ul>
+            <li>each of the players forms their own team <code>/ftbteams party create YourCoolTeamNameHere </code></li>
+            <li>ally your team with your allies' teams <code>/party allies add OtherTeamNameHere </code></li>
+		</ul>
+	</div>
     <div>
-		<h1>Server Status</h1>
+		<h2>Server Status</h2>
         <button id="reloadButton">Attempt to start server</button>
         <p id="reloadResponse"></p>
     </div>
 	<div>
-		<h1>Server Costs</h1>
+		<h3>Server Costs</h3>
 		<p>Total server cost for April 2022: $16.95 USD</p>
 		<p>If you'd like to donate towards the server costs, I accept donations via paypal:</p>
 		<form action="https://www.paypal.com/donate" method="post" target="_top">
